@@ -38,8 +38,8 @@ namespace health_calc_pack_dotnet_test.PackLibrary
         {
 
             IIMC imc = new IMC();
-            double height = 0;
-            double weight = 100;
+            double height = 10;
+            double weight = 400;
 
             bool result = imc.IsValidData(height, weight);
 
@@ -47,6 +47,7 @@ namespace health_calc_pack_dotnet_test.PackLibrary
 
         }
         [Theory]
+        [InlineData(0, "")]
         [InlineData(17.5, IMCClassification.Magreza)]
         [InlineData(18.49, IMCClassification.Magreza)]
         [InlineData(18.5, IMCClassification.Normal)]
@@ -65,6 +66,7 @@ namespace health_calc_pack_dotnet_test.PackLibrary
 
             Assert.Equal(expected, result);
         }
+  
 
     }
 }

@@ -28,18 +28,18 @@ namespace health_calc_pack_dotnet_o3
          */ 
         public string GetIMCCategory(double IMC)
         {
-            if (IMC < 18.5)
-                return IMCClassification.Magreza;
-            else if (IMC >= 18.5 && IMC < 25)
-                return IMCClassification.Normal;
-            else if (IMC >= 25 && IMC < 30)
-                return IMCClassification.Sobrepeso;
-            else if (IMC >= 30 && IMC < 40)
-                return IMCClassification.Obesidade;
-            else if (IMC >= 40)
-                return IMCClassification.ObesidadeGrave;
+             if (IMC > 0 && IMC < 18.5)
+                  return IMCClassification.Magreza;
+              else if (IMC >= 18.5 && IMC < 25)
+                  return IMCClassification.Normal;
+              else if (IMC >= 25 && IMC < 30)
+                  return IMCClassification.Sobrepeso;
+              else if (IMC >= 30 && IMC < 40)
+                  return IMCClassification.Obesidade;
+              else if (IMC >= 40)
+                  return IMCClassification.ObesidadeGrave;
 
-            return string.Empty;
+             return string.Empty;
         }
 
         /*
@@ -47,7 +47,7 @@ namespace health_calc_pack_dotnet_o3
          */
         public bool IsValidData(double height, double weight)
         {
-            return (height > 0 && weight > 0);
+            return (height > 0 && weight > 0) && (height < 3.0 && weight <= 300.0);
         }
     }
 }
