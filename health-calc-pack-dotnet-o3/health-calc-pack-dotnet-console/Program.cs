@@ -8,4 +8,4 @@ var result = imc.Calc(height, weight);
 
 var classification = imc.GetIMCCategory(result);
 
-Console.WriteLine($"Seu IMC é: {result} e o resultado é: {classification} [PESO]: {weight} [ALTURA]:");
+Console.WriteLine($"O valor do seu IMC é: {result} e a classificação é: {classification} [PESO]: {weight} [ALTURA]:");

@@ -47,10 +47,16 @@ namespace health_calc_pack_dotnet_test.PackLibrary
 
         }
         [Theory]
-        [InlineData(15, IMCClassification.Magreza)]
+        [InlineData(17.5, IMCClassification.Magreza)]
+        [InlineData(18.49, IMCClassification.Magreza)]
+        [InlineData(18.5, IMCClassification.Normal)]
+        [InlineData(24, IMCClassification.Normal)]
         [InlineData(19, IMCClassification.Normal)]
-        [InlineData(27, IMCClassification.Sobrepeso)]
-        [InlineData(35, IMCClassification.Obesidade)]
+        [InlineData(29, IMCClassification.Sobrepeso)]
+        [InlineData(25, IMCClassification.Sobrepeso)]
+        [InlineData(30, IMCClassification.Obesidade)]
+        [InlineData(39, IMCClassification.Obesidade)]
+        [InlineData(40, IMCClassification.ObesidadeGrave)]
         [InlineData(46, IMCClassification.ObesidadeGrave)]
         public void RetornaCategoriaIMC_QuandoIndiceValido_EntaoRetornaCategoria(double imcValue, string expected)
         {
