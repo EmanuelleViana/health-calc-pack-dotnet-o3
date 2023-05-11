@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33627.172
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "health-calc-pack-dotnet-o3", "health-calc-pack-dotnet-o3\health-calc-pack-dotnet-o3.csproj", "{F8CDE8BA-8596-4ADB-BDDA-4DBDFD5060E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "health-calc-pack-dotnet-console", "health-calc-pack-dotnet-console\health-calc-pack-dotnet-console.csproj", "{54E61730-F506-407B-918B-F4419E8106A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "health-calc-pack-dotnet-test", "health-calc-pack-dotnet-test\health-calc-pack-dotnet-test.csproj", "{ABFE311D-B746-4711-A35C-211EA3DB0D84}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F8CDE8BA-8596-4ADB-BDDA-4DBDFD5060E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8CDE8BA-8596-4ADB-BDDA-4DBDFD5060E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8CDE8BA-8596-4ADB-BDDA-4DBDFD5060E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8CDE8BA-8596-4ADB-BDDA-4DBDFD5060E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54E61730-F506-407B-918B-F4419E8106A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54E61730-F506-407B-918B-F4419E8106A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54E61730-F506-407B-918B-F4419E8106A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54E61730-F506-407B-918B-F4419E8106A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABFE311D-B746-4711-A35C-211EA3DB0D84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABFE311D-B746-4711-A35C-211EA3DB0D84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABFE311D-B746-4711-A35C-211EA3DB0D84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABFE311D-B746-4711-A35C-211EA3DB0D84}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {22E8FC11-C197-49FF-BB76-140722DCF53A}
+	EndGlobalSection
+EndGlobal
