@@ -66,7 +66,5 @@ namespace health_calc_pack_dotnet_test.PackLibrary
 
             Assert.Equal(expected, result);
         }
-  
-
     }
 }
